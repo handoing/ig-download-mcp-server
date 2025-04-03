@@ -15,13 +15,17 @@ MCP service for downloading Instagram videos
 
 Start the MCP service:
 
+```sh
+$ git clone https://github.com/handoing/ig-download-mcp-server
+```
+
 ```json
 {
     "mcpServers": {
         "ig-download-mcp-server": {
-            "command": "npx",
+            "command": "node",
             "args": [
-                "github:handoing/ig-download-mcp-server"
+                "path/ig-download-mcp-server/index.js"
             ]
         }
     }
